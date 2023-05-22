@@ -1,0 +1,29 @@
+<div class="content">
+<table class="rTable">
+  <caption>{{helloWorld}}</caption>
+  <thead>
+    <th>Atividade</th>
+    <th>Status</th>
+    <th></th>
+  </thead>
+  <tbody>
+
+    <tr *ngFor="let tarefa of tarefas" >
+      <td>{{ tarefa.atividade }}</td>
+      <td>{{ tarefa.status }}</td>
+      <td><button><a [routerLink]="['/editar', tarefa.id]">Editar</a></button>
+      <button (click)="deletar(tarefa)">Deletar</button></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div style="text-align: center;">
+<button><a routerLink="criar">Criar Tarefa</a></button>
+</div>
+
+<br>
+
+
+ 
+

@@ -1,0 +1,40 @@
+h1 {
+  text-align: center;
+}
+
+nav {
+  background-color: #333;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ccc;
+}

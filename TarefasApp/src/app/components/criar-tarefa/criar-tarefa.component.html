@@ -1,0 +1,13 @@
+<p>Criar Tarefa</p>
+
+<form [formGroup]="formTarefa" (ngSubmit)="onSubmit()">
+
+  <label for="first-name">Atividade: </label>
+  <input id="first-name" type="text" formControlName="atividade">
+<br>
+  <label for="last-name">Status: </label>
+  <input id="last-name" type="text" formControlName="status">
+
+  <button type="submit" [disabled]="!formTarefa.valid">Submit</button>
+</form>
+
